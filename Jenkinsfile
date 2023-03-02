@@ -1,4 +1,8 @@
 pipeline {
+    parameters {
+      string (name: 'NUM1', defaultValue: '11')
+      string (name: 'NUM2', defaultValue: '12')
+    }
     agent any
     triggers {
         pollSCM('H/5 * * * *')
