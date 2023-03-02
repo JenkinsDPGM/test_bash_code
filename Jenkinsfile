@@ -6,9 +6,12 @@ pipeline {
       string (name: 'NUM4', defaultValue: '0')
       string (name: 'NUM5', defaultValue: '0')
     }
+    options {
+      buildDiscarder(logRotator(numToKeepStr:'10'))
+    }
     agent any
     triggers {
-        pollSCM('H/5 * * * *')
+        pollSCM 'H/10 * * * *'
     }
     stages{
         stage('Pull Code'){
