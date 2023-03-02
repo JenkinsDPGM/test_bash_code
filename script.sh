@@ -22,5 +22,6 @@ TOTAL=$(($NUM1+$NUM2+$NUM3+$NUM4+$NUM5))
 #Print the result
 echo "##########################################"
 printf "%s %d\n" "The result is: " $TOTAL
+printf "%s %d\n" "The number of params where: " $#
 echo "##########################################"
 
