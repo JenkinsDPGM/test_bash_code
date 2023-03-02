@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    parameters {
-      NUM1="11"
-      NUM2="12"
-    }
     triggers {
         pollSCM('H/5 * * * *')
     }
