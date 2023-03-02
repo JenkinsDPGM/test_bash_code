@@ -21,6 +21,7 @@ pipeline {
                 sh """
                    chmod +x script.sh
                    ./script.sh ${NUM1} ${NUM2} ${NUM3} ${NUM4} ${NUM5}
+                   echo 'You did it'
                 """
             }
         }
