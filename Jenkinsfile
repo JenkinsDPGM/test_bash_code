@@ -1,7 +1,10 @@
 pipeline {
     parameters {
-      string (name: 'NUM1', defaultValue: '20')
-      string (name: 'NUM2', defaultValue: '3')
+      string (name: 'NUM1', defaultValue: '0')
+      string (name: 'NUM2', defaultValue: '0')
+      string (name: 'NUM3', defaultValue: '0')
+      string (name: 'NUM4', defaultValue: '0')
+      string (name: 'NUM5', defaultValue: '0')
     }
     agent any
     triggers {
@@ -17,7 +20,7 @@ pipeline {
             steps{
                 sh """
                    chmod +x script.sh
-                   ./script.sh ${NUM1} ${NUM2}
+                   ./script.sh ${NUM1} ${NUM2} ${NUM3} ${NUM4} ${NUM5}
                 """
             }
         }
