@@ -1,7 +1,7 @@
 pipeline {
     parameters {
-      string (name: 'NUM1', defaultValue: '11')
-      string (name: 'NUM2', defaultValue: '12')
+      string (name: 'NUM1', defaultValue: '23')
+      string (name: 'NUM2', defaultValue: '23')
     }
     agent any
     triggers {
