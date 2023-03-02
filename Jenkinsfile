@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    parameters {
+      NUM1=11
+      NUM2=12
+    }
     triggers {
         pollSCM('H/5 * * * *')
     }
@@ -13,7 +17,7 @@ pipeline {
             steps{
                 sh """
                    chmod +x script.sh
-                   ./script.sh
+                   ./script.sh $1 $2
                 """
             }
         }

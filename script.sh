@@ -2,10 +2,10 @@
 #Script to add two numbers
 
 #Value of number one
-NUM1=11
+NUM1=$1
 
 #Value of number two
-NUM2=12
+NUM2=$2
 
 #Total
 TOTAL=$(($NUM1+$NUM2))
